@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+
+
+    <style>
+        h1{
+            font-family: 'Exo 2', sans-serif;
+            font-size: 80px;
+            font-weight: bold;
+        }
+        hr{
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: -50px;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-content: space-between;
+
+        }
+        li{
+            list-style: none;
+            font-family: 'Exo 2', sans-serif;
+            margin-right: 1em;
+            margin-left: 1em;
+        }
+        .anchor{
+            color: black;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        .celica-photos{
+            width: 400px;
+            height: 250px;
+            border: 5px solid black;
+        }
+        .title-font{
+            font-family: 'Exo 2', sans-serif;
+            font-size: 20px;
+        }
+        .box{
+            text-align: center;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .button {
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+        }
+
+        .button:hover {
+            background-color: #555555;
+            color: white;
+        }
+        #toyota-link:hover{
+           color: darkred;
+        }
+        #toyota-link{
+            color: black;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        #celica-emb{
+            height: 75px;
+            width: 125px;
+        }
+        table {
+            font-family: 'Exo 2', sans-serif;
+            border-collapse: collapse;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header><h1 style="text-align: center; color: red;">TOYOTA<img id="celica-emb" src="images/celicaemb.jpeg">CELICA</h1></header>
+    <hr>
+
+
+    <nav>
+        <li>
+            <a class="anchor" href="gtfour.html" data-link>GT-FOUR</a>
+        </li>
+        <li>
+            <a id="toyota-link" href="https://www.toyota.com/">CLICK HERE TO SEE TOYOTA'S LATEST SPORTS CARS</a>
+        </li>
+    </nav>
+
+
+<div class="box">
+
+            <div>
+                <h2 class="title-font">1971 – 1977 Toyota Celica [First (1st) Generation]</h2>
+                <img class="celica-photos" id="gen1" src="images/gen1.jpeg" alt="celica">
+                <p>
+                    <button class="button" type="button" onclick="engine(1)">Car</button>
+                    <button class="button" type="button" onclick="engine(0)">Engine bay</button>
+                </p>
+            </div>
+            <div>
+                <img class="celica-photos" id="gen2" src="images/gen2.jpeg" alt="celica">
+                <h2 class="title-font">1978 – 1981 Toyota Celica  [Second (2nd) Generation]</h2>
+                <p>
+                    <button class="button" type="button" onclick="engine2(1)">Car</button>
+                    <button class="button" type="button" onclick="engine2(0)">Engine bay</button>
+                </p>
+            </div>
+
+
+
+
+            <div>
+                <img class="celica-photos" id="gen3" src="images/gen3.jpeg" alt="celica">
+                <h2 class="title-font">1982 – 1985 Toyota Celica [Third (3rd) Generation]</h2>
+                <p>
+                    <button class="button" type="button" onclick="engine3(1)">Car</button>
+                    <button class="button" type="button" onclick="engine3(0)">Engine bay</button>
+                </p>
+            </div>
+            <div>
+                <img class="celica-photos" id="gen4" src="images/gen4.jpeg" alt="celica">
+                <h2 class="title-font">1986 – 1989 Toyota Celica [Fourth (4th) Generation]</h2>
+                <p>
+                    <button class="button" type="button" onclick="engine4(1)">Car</button>
+                    <button class="button" type="button" onclick="engine4(0)">Engine bay</button>
+                </p>
+            </div>
+
+
+
+            <div>
+                <img class="celica-photos" id="gen5" src="images/gen5.jpeg" alt="celica">
+                <h2 class="title-font">1990 – 1993 Toyota Celica [Fifth (5th) Generation]</h2>
+                <p>
+                    <button class="button" type="button" onclick="engine5(1)">Car</button>
+                    <button class="button" type="button" onclick="engine5(0)">Engine bay</button>
+                </p>
+            </div>
+            <div>
+                <img class="celica-photos" id="gen6" src="images/gen6.jpeg" alt="celica">
+                <h2 class="title-font">1994 – 1999 Toyota Celica [Sixth (6th) Generation]</h2>
+                <p>
+                    <button class="button" type="button" onclick="engine6(1)">Car</button>
+                    <button class="button" type="button" onclick="engine6(0)">Engine bay</button>
+                </p>
+
+            </div>
+
+
+
+            <div>
+                <img class="celica-photos" id="gen7" src="images/gen7.jpeg" alt="celica">
+                <h2 class="title-font">2000 – 2005 Toyota Celica [Seventh (7th) Generation]</h2>
+                <p>
+                    <button class="button" type="button" onclick="engine7(1)">Car</button>
+                    <button class="button" type="button" onclick="engine7(0)">Engine bay</button>
+                </p>
+
+            </div>
+
+</div>
+<div>
+    <p>
+        <h1 style="text-align: center">Specs By Generation</h1>
+        <hr>
+    </p>
+    <table>
+        <tr>
+            <th></th>
+            <th>1st Gen (GT)</th>
+            <th>2nd Gen (GT)</th>
+            <th>3rd Gen (GT)</th>
+            <th>4th Gen (GT)</th>
+            <th>5th Gen (GT-S)</th>
+            <th>6th Gen (GT-S)</th>
+            <th>7th Gen (GT-S)</th>
+        </tr>
+        <tr>
+            <td><b>Drive Wheels</b></td>
+            <td>RWD</td>
+            <td>RWD</td>
+            <td>RWD</td>
+            <td>FWD</td>
+            <td>FWD</td>
+            <td>FWD</td>
+            <td>FWD</td>
+        </tr>
+        <tr>
+            <td><b>Capacity</b></td>
+            <td>1.4 Litre</td>
+            <td>2.0 Litre</td>
+            <td>2.0 Litre</td>
+            <td>2.0 Litre</td>
+            <td>2.2 Litre</td>
+            <td>2.2 Litre</td>
+            <td>1.8 Litre</td>
+        </tr>
+        <tr>
+            <td><b>Cylinders</b></td>
+            <td>4 cylinders</td>
+            <td>4 cylinders</td>
+            <td>4 cylinders</td>
+            <td>4 cylinders</td>
+            <td>4 cylinders</td>
+            <td>4 cylinders</td>
+            <td>4 cylinders</td>
+        </tr>
+        <tr>
+            <td><b>Max. Power output</b></td>
+            <td>85 BHP @ 6000 RPM</td>
+            <td>118 BHP @ 5800 RPM</td>
+            <td>148 BHP @ 6400 RPM</td>
+            <td>158 BHP @ 6600 RPM</td>
+            <td>135 BHP @ 5400 RPM</td>
+            <td>135 BHP @ 5400 RPM</td>
+            <td>180 BHP @ 7600 RPM</td>
+        </tr>
+        <tr>
+            <td><b>Transmission</b></td>
+            <td>4 speed manual</td>
+            <td>5 speed manual</td>
+            <td>5 speed manual</td>
+            <td>5 speed manual</td>
+            <td>5 speed manual</td>
+            <td>5 speed manual</td>
+            <td>6 speed manual</td>
+
+        </tr>
+        <tr>
+            <td><b>Top Speed</b></td>
+            <td>103 MPH</td>
+            <td>99 MPH</td>
+            <td>130 MPH</td>
+            <td>109 MPH</td>
+            <td>116 MPH</td>
+            <td>127 MPH</td>
+            <td>135 MPH</td>
+        </tr>
+    </table>
+</div>
+
+
+    <script>
+        function engine(en) {
+            var pic;
+
+            if (en === 0) {
+                pic = "images/gen1en.jpeg"
+            } else {
+                pic = "images/gen1.jpeg"
+            }
+
+            document.getElementById('gen1').src = pic;
+
+        }
+
+        function engine2 (en) {
+            var pic;
+
+             if (en === 0) {
+                pic = "images/gen2en.jpeg"
+            } else {
+                pic = "images/gen2.jpeg"
+            }
+
+            document.getElementById('gen2').src = pic;
+        }
+
+        function engine3 (en) {
+            var pic;
+
+            if (en ===0) {
+                pic = "images/gen3en.jpeg"
+            } else {
+                pic = "images/gen3.jpeg"
+            }
+
+            document.getElementById('gen3').src = pic;
+        }
+
+        function engine4 (en) {
+            var pic;
+
+            if (en ===0) {
+                pic = "images/gen4en.jpeg"
+            } else {
+                pic = "images/gen4.jpeg"
+            }
+
+            document.getElementById('gen4').src = pic;
+        }
+
+        function engine5 (en) {
+            var pic;
+
+            if (en ===0) {
+                pic = "images/gen5en.jpeg"
+            } else {
+                pic = "images/gen5.jpeg"
+            }
+
+            document.getElementById('gen5').src = pic;
+        }
+
+        function engine6 (en) {
+            var pic;
+
+            if (en ===0) {
+                pic = "images/gen6en.jpeg"
+            } else {
+                pic = "images/gen6.jpeg"
+            }
+
+            document.getElementById('gen6').src = pic;
+        }
+
+        function engine7 (en) {
+            var pic;
+
+            if (en ===0) {
+                pic = "images/gen7en.webp"
+            } else {
+                pic = "images/gen7.jpeg"
+            }
+
+            document.getElementById('gen7').src = pic;
+        }
+
+    </script>
+
+
+
+
+
+</body>
+</html>

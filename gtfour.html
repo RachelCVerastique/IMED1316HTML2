@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GT-FOUR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gtfour.css">
+
+
+</head>
+<body>
+    <header><h1 style="text-align: center;">GT-FOUR / ST205</h1></header>
+    <hr>
+    <nav>
+        <li id="nav-item">
+            <a class="anchor" href="index.html" data-link>HOME</a>
+        </li>
+    </nav>
+
+    <div class="box">
+        <h2 class="title-font">1994 – 1999 Toyota Celica [Sixth (6th) Generation]</h2>
+        <img class="celica-photos" id="gen1" src="images/gen6gt4.jpeg" alt="celica">
+        <p>
+            <button class="button" type="button" onclick="engine(1)">Car</button>
+            <button class="button" type="button" onclick="engine(0)">Engine bay</button>
+        </p>
+
+            <p id="specs">GT-FOUR Specs</p>
+            <ul id="list">
+                <li><b>Drive Wheels:</b> AWD</li>
+                <li><b>Engine:</b> 2.0 Litre Turbo</li>
+                <li><b>Cylinders:</b> 4</li>
+                <li><b>Max. Power Output:</b> 251.5 @ 6000 RPM</li>
+                <li><b>Transmission:</b> 5 speed manual</li>
+                <li><b>Top Speed:</b> 152 MPH</li>
+            </ul>
+
+
+    </div>
+
+    <script>
+
+    function engine(en) {
+    var pic;
+
+    if (en === 0) {
+    pic = "images/gen6gt4en.webp"
+    } else {
+    pic = "images/gen6gt4.jpeg"
+    }
+
+    document.getElementById('gen1').src = pic;
+
+    }
+    </script>
+</body>
+</html>
